@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Font Size"
+            android:padding="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="400px"
+            android:layout_height="100dp"
+            android:id="@+id/fontsizetxt" />
+        <NumberPicker
+            android:layout_width="45dp"
+            android:paddingRight="1000dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/fontsizetxt"
+            android:id="@+id/numberPicker1" />
+        <Button
+            android:text="Mud Window Height"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@id/fontsizetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mudHeightBTN" />
+        <TextView
+            android:inputType="number"
+            android:layout_width="115dp"
+			android:paddingTop="10dp"
+			android:textAlignment="textEnd"
+            android:layout_below="@id/numberPicker1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mudHeightBTN"
+            android:id="@+id/mudHeight" />
+        <TextView
+            android:text="Enable Autologon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mudHeightBTN"
+            android:id="@+id/EnableAutoLgnTxt" />
+        <ToggleButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/mudHeightBTN"
+            android:layout_toRightOf="@id/EnableAutoLgnTxt"
+            android:id="@+id/AutoLogonBtn" />
+		 <Button
+            android:text="Update Logon Information"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AutoLogonBtn"
+            android:layout_toRightOf="@id/EnableAutoLgnTxt"
+            android:id="@+id/UpdateLgnBtn" />
+		<TextView
+			android:text="Graphical Mode"
+			android:layout_width="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft = "40dp"
+			android:layout_below="@id/UpdateLgnBtn"
+			android:id="@+id/GraphicalModeTxt"/>
+		<ToggleButton
+			android:text="Graphical Mode"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_marginLeft="40dp"
+			android:layout_below="@id/UpdateLgnBtn"
+			android:layout_toRightOf="@id/EnableAutoLgnTxt"
+			android:id="@+id/GraphicModeBtn"/>
+		<Button
+			android:text="Macro 1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/GraphicModeBtn"
+			android:id="@+id/Macrobutton1" />
+		<Button
+			android:text="Macro 2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton1"
+			android:id="@+id/Macrobutton2" />
+		<Button
+			android:text="Macro 3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton2"
+			android:id="@+id/Macrobutton3" />
+		<Button
+			android:text="Macro 4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton3"
+			android:id="@+id/Macrobutton4" />
+		<Button
+			android:text="Macro 5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton4"
+			android:id="@+id/Macrobutton5" />
+		<Button
+			android:text="Macro 6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton5"
+			android:id="@+id/Macrobutton6" />
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"    
+			android:layout_below="@id/GraphicModeBtn"
+			android:layout_toRightOf="@id/Macrobutton1"
+			android:id="@+id/MacroString1"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"    
+			android:layout_below="@id/Macrobutton1"
+			android:layout_toRightOf="@id/Macrobutton2"
+			android:id="@+id/MacroString2"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"    
+			android:layout_below="@id/Macrobutton2"
+			android:layout_toRightOf="@id/Macrobutton3"
+			android:id="@+id/MacroString3"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"    
+			android:layout_below="@id/Macrobutton3"
+			android:layout_toRightOf="@id/Macrobutton4"
+			android:id="@+id/MacroString4"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"    
+			android:layout_below="@id/Macrobutton4"
+			android:layout_toRightOf="@id/Macrobutton5"
+			android:id="@+id/MacroString5"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton5"
+			android:layout_toRightOf="@id/Macrobutton6"
+			android:id="@+id/MacroString6" />
+		<Button
+			android:text="Mud Ip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton6"
+			android:id="@+id/MudIPAddressBtn"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/Macrobutton6"
+			android:layout_toRightOf="@id/MudIPAddressBtn"
+			android:id="@+id/MudIPAddressTxt"/>
+		<Button
+			android:text="Port Number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/MudIPAddressBtn"
+			android:id="@+id/MudPortBtn"/>
+		<TextView
+			android:text="Empty String"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/MudIPAddressBtn"
+			android:layout_toRightOf="@id/MudPortBtn"
+			android:id="@+id/MudPortTxt"/>
+		<Button
+            android:text="Save Changes"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/MudPortBtn"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton" />
+    </RelativeLayout>
+</ScrollView>

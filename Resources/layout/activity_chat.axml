@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:chatScrn="http://schemas.android.com/apk/res/android"
+    chatScrn:orientation="vertical"
+    chatScrn:layout_width="match_parent"
+    chatScrn:layout_height="match_parent">
+	 <View
+        chatScrn:background="@drawable/MudBackground"
+        chatScrn:layout_width="fill_parent"
+        chatScrn:layout_height="fill_parent"
+        chatScrn:id="@+id/BackgroundView" />
+    <TextView
+        chatScrn:layout_width="match_parent"
+        chatScrn:layout_height="500dp"
+        chatScrn:textSize="10dp"
+        chatScrn:scrollbars="vertical"
+        chatScrn:scrollbarStyle="insideInset"
+        chatScrn:gravity="bottom"
+        chatScrn:background="@android:color/black"
+        chatScrn:textColor="@android:color/white"
+        chatScrn:id="@+id/ChatWindow" />
+    <ImageButton
+        chatScrn:src="@drawable/chaticon"
+        chatScrn:layout_width="65dp"
+        chatScrn:paddingLeft="10dp"
+        chatScrn:layout_height="40dp"
+        chatScrn:layout_below="@id/ChatWindow"
+        chatScrn:id="@+id/ChatButton" />
+    <EditText
+        chatScrn:layout_width="match_parent"
+        chatScrn:layout_below="@id/ChatWindow"
+        chatScrn:singleLine="true"
+        chatScrn:layout_toRightOf="@id/ChatButton"
+        chatScrn:visibility="invisible"
+        chatScrn:enabled="false"
+        chatScrn:layout_height="wrap_content"
+        chatScrn:id="@+id/editText2" />
+    <Button
+        chatScrn:text="Send"
+        chatScrn:layout_below="@id/editText2"
+        chatScrn:layout_width="116.5dp"
+        chatScrn:layout_height="wrap_content"
+        chatScrn:id="@+id/SendButton" />
+    <Button
+        chatScrn:text="Back"
+        chatScrn:layout_toRightOf="@id/SendButton"
+        chatScrn:layout_below="@id/editText2"
+        chatScrn:layout_width="116.5dp"
+        chatScrn:layout_height="wrap_content"
+        chatScrn:id="@+id/BackButton" />
+    <ImageButton
+        chatScrn:src="@drawable/northbtnicon"
+        chatScrn:layout_below="@id/BackButton"
+        chatScrn:layout_toRightOf="@id/BackButton"
+        chatScrn:layout_width="47dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/NorthBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/eastbtnicon"
+        chatScrn:layout_below="@id/NorthBtn"
+        chatScrn:layout_toRightOf="@id/NorthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="47dp"
+        chatScrn:id="@+id/EastBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/southbtnicon"
+        chatScrn:layout_below="@id/EastBtn"
+        chatScrn:layout_toLeftOf="@id/EastBtn"
+        chatScrn:layout_width="47dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/SouthBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/westbtnicon"
+        chatScrn:layout_below="@id/NorthBtn"
+        chatScrn:layout_toLeftOf="@id/NorthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="47dp"
+        chatScrn:id="@+id/WestBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/SouthEastBtnIcon"
+        chatScrn:layout_below="@id/EastBtn"
+        chatScrn:layout_toRightOf="@id/SouthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/SouthEastBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/southWestbtnicon"
+        chatScrn:layout_below="@id/WestBtn"
+        chatScrn:layout_toLeftOf="@id/SouthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/SouthWestBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/NorthEastBtnIcon"
+        chatScrn:layout_above="@id/EastBtn"
+        chatScrn:layout_toRightOf="@id/NorthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/NorthEastBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/northwestbtnicon"
+        chatScrn:layout_above="@id/WestBtn"
+        chatScrn:layout_toLeftOf="@id/NorthBtn"
+        chatScrn:layout_width="53dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/NorthWestBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/upbtnicon"
+        chatScrn:layout_above="@id/EastBtn"
+        chatScrn:layout_toRightOf="@id/NorthEastBtn"
+        chatScrn:layout_width="47dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/UpBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/downbtnicon"
+        chatScrn:layout_below="@id/UpBtn"
+        chatScrn:layout_toRightOf="@id/EastBtn"
+        chatScrn:layout_width="47dp"
+        chatScrn:layout_height="53dp"
+        chatScrn:id="@+id/DownBtn" />
+    <ImageButton
+        chatScrn:src="@drawable/eyebtnicon"
+        chatScrn:layout_below="@id/NorthBtn"
+        chatScrn:layout_toRightOf="@id/WestBtn"
+        chatScrn:layout_width="47dp"
+        chatScrn:layout_height="47dp"
+        chatScrn:id="@+id/EyeBtn" />
+	<Button
+		chatScrn:layout_below="@id/BackButton"
+		chatScrn:text="Macro 1"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro1Btn" />
+	<Button
+		chatScrn:layout_below="@id/Macro1Btn"
+		chatScrn:text="Macro 2"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro2Btn" />
+	<Button
+		chatScrn:layout_below="@id/Macro2Btn"
+		chatScrn:text="Macro 3"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro3Btn" />
+	<Button
+		chatScrn:layout_below="@id/BackButton"
+		chatScrn:layout_toRightOf="@id/Macro1Btn"
+		chatScrn:text="Macro 4"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro4Btn" />
+	<Button
+		chatScrn:layout_below="@id/Macro4Btn"
+		chatScrn:layout_toRightOf="@id/Macro1Btn"
+		chatScrn:text="Macro 5"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro5Btn" />
+	<Button
+		chatScrn:layout_below="@id/Macro5Btn"
+		chatScrn:layout_toRightOf="@id/Macro1Btn"
+		chatScrn:text="Macro 6"
+		chatScrn:layout_width="wrap_content"
+		chatScrn:layout_height="wrap_content"
+		chatScrn:id="@+id/Macro6Btn" />
+</RelativeLayout>

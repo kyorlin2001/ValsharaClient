@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:MainMenu="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    MainMenu:layout_width="match_parent"
+    MainMenu:layout_height="match_parent"
+    MainMenu:minWidth="25px"
+    MainMenu:minHeight="25px">
+    <Button
+        MainMenu:text="Connect to Mud"
+        MainMenu:padding="10dp"
+        MainMenu:layout_width="wrap_content"
+        MainMenu:layout_height="wrap_content"
+        MainMenu:id="@+id/connectbutton" />
+    <Button
+        MainMenu:text="Options"
+        MainMenu:padding="10dp"
+        MainMenu:layout_width="wrap_content"
+        MainMenu:layout_height="wrap_content"
+        MainMenu:layout_toRightOf="@id/connectbutton"
+        MainMenu:id="@+id/optionsbutton" />
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		MainMenu:id="@+id/adView1"
+		MainMenu:layout_width="wrap_content"
+		MainMenu:layout_height="wrap_content"
+	    MainMenu:layout_below = "@id/optionsbutton"
+	    MainMenu:layout_centerHorizontal="true"
+		ads:adSize="SMART_BANNER"
+ 	    ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+</RelativeLayout>
