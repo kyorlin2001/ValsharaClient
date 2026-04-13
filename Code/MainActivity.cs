@@ -7,7 +7,7 @@ using ValsharaPlatform.Code;
 using Android.Content;
 using Android.Gms.Ads;
 
-// addmob app id REMOVED_FOR_SECURITY
+// addmob app id "Removed for security"
 namespace ValsharaPlatform
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -15,11 +15,11 @@ namespace ValsharaPlatform
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            MobileAds.Initialize(this, "REMOVED_FOR_SECURITY");
+            MobileAds.Initialize(this, "Removed for security");
             //Code to initialize Buddy Parse
             ParseClient.Initialize( new ParseClient.Configuration {
-                ApplicationId = "REMOVED_FOR_SECURITY",
-                WindowsKey = "REMOVED_FOR_SECURITY",
+                ApplicationId = "Removed for security",
+                WindowsKey = "Removed for security",
                 Server = "https://parse.buddy.com/parse/" });
           
 
